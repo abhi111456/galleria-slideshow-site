@@ -1,4 +1,4 @@
-// Ensure the API key and URL are correct
+
 const apiKey = 'LlUYQn6NuuAWvMZ1IC1gAXfIZjFVAOVGRNPJf3oI4Zc';
 const apiUrl = `https://api.unsplash.com/search/photos?query=painting&client_id=${apiKey}&per_page=16`;
 
