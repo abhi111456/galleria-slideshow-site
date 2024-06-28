@@ -8,26 +8,23 @@ body {
     align-items: center;
 }
 
-header {
-    width: 100%;
-    color: white;
-    padding: 0.4rem 0;
-}
+
 .paragraph{
-    
+    margin-right: 16px;
     color: #878787;
 }
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    height: 70px;
-    margin: 0 auto;
+    width: 100%;
+    height: 83px;
+    
 }
 
 .logo {
     font-size: 2.5rem;
+    margin-left: 16px;
     font-weight: bold;
     font-family: "Playwrite MX", cursive;
     text-decoration: none;
