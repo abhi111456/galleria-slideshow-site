@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galleria Slideshow</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-      <nav>
-        <h1 href="#" class="logo">galleria.</h1>
-        <p class="paragraph">START SLIDESHOW</p>
-      </nav>
-   
-    <div class="line"></div>
-    <div class="image-grid" id="imageGrid"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+    <title>Galleria Slideshow Site</title>
+</head>
+<body>
+    <header class="header container">
+       
+            <h1 class="sr-only">Galleria</h1>
+        
+        <a class="link link--1 border-transparent" href="detail.html?painting=0">Start slideshow</a>
+    </header>
+
+    <main class="main container">
+        <div class="grid" id="grid"></div>
+    </main>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
