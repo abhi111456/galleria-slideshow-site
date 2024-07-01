@@ -1,5 +1,3 @@
-
-
 const accessKey = 'LlUYQn6NuuAWvMZ1IC1gAXfIZjFVAOVGRNPJf3oI4Zc';
 
 const imageList = document.getElementById('image-list');
@@ -16,7 +14,12 @@ fetch(`https://api.unsplash.com/photos?client_id=${accessKey}`)
             img.alt = item.alt_description;
             img.loading = 'lazy';
 
+            const textOverlay = document.createElement('div');
+            textOverlay.classList.add('text-overlay');
+            textOverlay.innerText = `${item.user.name}\n${item.description || item.alt_description || 'No description'}`;
+
             imageListItem.appendChild(img);
+            imageListItem.appendChild(textOverlay);
             imageList.appendChild(imageListItem);
         });
     })
