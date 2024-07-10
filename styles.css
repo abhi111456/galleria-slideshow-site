@@ -1,9 +1,11 @@
-.sr-only {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 13px;
-    font-family: "Playwrite MX", cursive;
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 .header {
@@ -30,13 +32,12 @@
     color: #000;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+.sr-only {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 13px;
+    font-family: "Playwrite MX", cursive;
 }
 
 .box {
@@ -48,24 +49,26 @@ body {
 
 .image-list {
     column-count: 3;
-    column-gap: 16px; /* Increased gap for better spacing */
+    column-gap: 16px;
 }
 
 .image-list-item {
     position: relative;
     break-inside: avoid;
-    margin-bottom: 16px; /* Increased margin for better spacing */
+    margin-bottom: 16px;
 }
 
 .image-list-item img {
     width: 100%;
     display: block;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-p{
+
+p {
     color: #686060;
 }
+
 .text-overlay {
     position: absolute;
     bottom: 0;
@@ -75,10 +78,48 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px;
-   font-weight: bold;
-
-    font-size: 1.5rem; 
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
     color: #000;
-  
+    background-color: rgba(255, 255, 255, 0.7); /* Added background for better readability */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .image-list {
+        column-count: 2;
+    }
+
+    .text-overlay {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header p {
+        align-self: flex-end; /* Aligns the <p> tag to the end */
+        margin: 0px;
+        margin-bottom: 0px;
+    }
+
+    .header h1 {
+        align-self: flex-start; /* Aligns the <p> tag to the end */
+        margin-top: 10px;
+        
+    }
+    .image-list {
+        column-count: 1;
+    }
+
+    .text-overlay {
+        font-size: 1rem;
+        padding: 8px;
+    }
 }
